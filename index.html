@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Preparatório ETEC</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte Inter do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Tela de Início (Seleção de Matéria) -->
+        <div id="start-screen">
+            <img src="https://logodownload.org/wp-content/uploads/2019/02/etec-logo-1.png" alt="Logo ETEC" class="logo" onerror="this.style.display='none'">
+            <h1>Quiz Preparatório ETEC</h1>
+            <p>Escolha uma matéria para começar a praticar:</p>
+            <div id="subject-selection" class="subject-grid">
+                <!-- Botões de matéria serão inseridos aqui pelo JavaScript -->
+            </div>
+        </div>
+
+        <!-- Tela do Quiz -->
+        <div id="quiz-screen" class="hidden">
+            <div class="quiz-header">
+                <h2 id="subject-title">Matéria</h2>
+                <div id="progress-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <p id="progress-text">Questão 1 de 10</p>
+            </div>
+            <hr>
+            <div id="question-container">
+                <p id="question-text">Qual é a pergunta?</p>
+            </div>
+            <div id="options-container">
+                <!-- Opções serão inseridas aqui -->
+            </div>
+            <button id="next-btn" class="hidden">Próxima Questão</button>
+        </div>
+
+        <!-- Tela de Resultados -->
+        <div id="results-screen" class="hidden">
+            <h2>Resultados</h2>
+            <p id="score-text">Você acertou 8 de 10!</p>
+            <p id="feedback-text">Muito bem! Continue assim.</p>
+            <div class="result-buttons">
+                <button id="restart-btn">Tentar Novamente</button>
+                <button id="home-btn">Voltar ao Início</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+</html>
